@@ -1,2 +1,3 @@
-# Pr-ctica-1-
+# Pratica-1-SO
+
 Sistems operativos. Universidad de Alicante. 
