@@ -31,6 +31,7 @@ void crearMalla(const int x, const int y) {
             }
             if(!esPadre) {
                 printf("Soy el proceso final, mi pid es %d\n", getpid());
+                sleep(15);
             }
             exit(0); 
             // Asegurarse de que el proceso hijo termine después de crear sus hijos
