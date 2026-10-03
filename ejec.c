@@ -113,18 +113,21 @@ void procesoA() {
     }
 }
 
-int main(int argc, char *argv[]) {
-    
+void validarArgumentos(int argc, char *argv[]) {
     if(argc != 2) {
         printf("ARGUMENTOS INCORRECTOS\n");
         exit(-1);
     } 
-
     tiempo = atoi(argv[1]); 
     if(tiempo <= 0) {
         printf("El tiempo debe ser un número positivo\n");
         exit(-1);
     } 
+}
+
+int main(int argc, char *argv[]) {
+    validarArgumentos(argc, argv); 
+
 
     setbuf(stdout, NULL);
     pidEje = getpid();
